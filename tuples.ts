@@ -10,3 +10,7 @@ console.log(ourTuple);
 const readonlyTuple: readonly [number, boolean, string] = [5, false, 'Coding God was here'];
 // readonlyTuple.push('Something new and wrong'); // This will cause an error
 console.log(readonlyTuple);
+
+//Demonstrating the use of named tuples
+// Named tuples allow you to give names to the elements of a tuple for better readability.
+const graph: [x: number, y: number] = [55.2, 41.3];
