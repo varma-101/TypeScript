@@ -15,3 +15,13 @@ console.log(readonlyTuple);
 // Named tuples allow you to give names to the elements of a tuple for better readability.
 const graph: [x: number, y: number] = [55.2, 41.3];
 console.log(`The coordinates of the point are x: ${graph[0]}, y: ${graph[1]}`);
+
+type Point = [x: number, y: number];
+
+function logPoint(p: Point) {
+  const [x, y] = p;
+  console.log(`X: ${x}, Y: ${y}`);
+}
+
+const myPoint: Point = [10, 20];
+logPoint(myPoint); // Output: X: 10, Y: 20
